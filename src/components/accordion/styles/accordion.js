@@ -6,7 +6,9 @@ export const Container = styled.section`
 `;
 
 export const Frame = styled.div`
-    margin-bottom: 40px;
+    max-width: 1200px;
+    margin-bottom: 10px;
+
 `
 
 export const Inner = styled.div`
@@ -20,7 +22,7 @@ export const Inner = styled.div`
 export const Item = styled.div`
     color: #fff;
     margin-bottom: 10px;
-
+    
     &:first-of-type {
         margin-top: 3em;
     }
@@ -43,6 +45,7 @@ export const Header = styled.div`
     display: flex;
     justify-content: space-between;
     cursor: pointer;
+    box-sizing: border-box;
     margin-bottom: 1px;
     font-size: 26px;
     font-weight: normal;
@@ -52,6 +55,15 @@ export const Header = styled.div`
     align-items: center;
     width: 100%;
 
+    img {
+        filter: brightness(0) invert(1);
+        width:24px;
+
+        @media(max-width: 600px) {
+            font-size: 16px;
+        }
+    }
+
     @media(max-width: 600px) {
         font-size: 16px;
     }
@@ -59,8 +71,8 @@ export const Header = styled.div`
 `;
 
 export const Body = styled.div`
-    max-width: 1200px;
     transition: max-height 0.25s cubic-bezier(0.5, 0, 0.1, 1);
+    box-sizing: border-box;
     font-size: 26px;
     font-weight: normal;
     line-height: normal;
