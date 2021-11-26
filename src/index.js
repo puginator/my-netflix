@@ -3,10 +3,15 @@ import ReactDOM from 'react-dom';
 import { GlobalStyles } from './global-styles';
 import App from './App';
 import { FirebaseContext } from './context/firebase';
+  
+// import { seedDatabase } from './seed';
+
+
 
 const config = {
   apiKey: "AIzaSyC82PfxN8LCmkFpAcSxc7LfvpiCGItEOsg",
   authDomain: "netflix-f696c.firebaseapp.com",
+  databaseURL: "https://netflix-f696c.firebaseio.com",
   projectId: "netflix-f696c",
   storageBucket: "netflix-f696c.appspot.com",
   messagingSenderId: "199360560266",
@@ -14,6 +19,8 @@ const config = {
 };
 
 const firebase = window.firebase.initializeApp(config)
+
+// seedDatabase(firebase);
 
 ReactDOM.render(
   <>
