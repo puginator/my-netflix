@@ -88,7 +88,7 @@ Card.Feature = function CardFeature({children,category, ...restProps}) {
 
                 <Group margin="30px 0" flexDirection="row" alignItems="center"> 
                     <Maturity rating={itemFeature.maturity}> {itemFeature.maturity < 12 ? 'PG' :
-                        itemFeature.maturity}</Maturity>
+                        itemFeature.maturity < 16 ? 'PG13': 'R'}</Maturity>
                     <FeatureText fontWeight="bold">
                         {itemFeature.genre.charAt(0).toUpperCase() + itemFeature.genre.slice(1)}
                     </FeatureText>
