@@ -59,6 +59,7 @@ export const Button = styled.button `
     background-color: #e50914;
     border-color: #ff0a16;
     border: none;
+    border-radius: 5px;
     width: 115px;
     height: 45px;
     text-transform: uppercase;
