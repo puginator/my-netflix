@@ -4,6 +4,7 @@ import { FaqsContainer } from '../containers/faqs'
 import { JumbotronContainer } from '../containers/jumbotron';
 import { FooterContainer } from '../containers/footer';
 import { HeaderContainer } from '../containers/header';
+import { Form } from "../components";
 
 export default function Home(){
     return (
@@ -14,7 +15,7 @@ export default function Home(){
                 <Feature.SubTitle>Watch anywhere. Cancel at any time.</Feature.SubTitle>
             <OptForm>
                     <OptForm.Input placeholder="Email Address" />
-                    <OptForm.Button>Try it now</OptForm.Button>
+                    <OptForm.Button><Form.Link to="/signup">Try it now</Form.Link></OptForm.Button>
                     <OptForm.Break />
                     <OptForm.Text>
                         Ready to watch? Enter your email to create or restart
