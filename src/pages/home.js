@@ -14,7 +14,7 @@ export default function Home(){
                 <Feature.SubTitle>Watch anywhere. Cancel at any time.</Feature.SubTitle>
             <OptForm>
                     <OptForm.Input placeholder="Email Address" />
-                    <OptForm.Button to={ROUTES.SIGN_IN}>Try it now</OptForm.Button>
+                    <OptForm.Button>Try it now</OptForm.Button>
                     <OptForm.Break />
                     <OptForm.Text>
                         Ready to watch? Enter your email to create or restart
