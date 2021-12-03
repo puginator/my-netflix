@@ -77,10 +77,6 @@ Header.FeatureCallOut = function HeaderFeatureCallOut({ children, ...restProps }
     return <FeatureCallOut {...restProps}>{children}</FeatureCallOut>
 }
 
-Header.PlayButton = function HeaderPlayButton({ children, ...restProps }) {
-    return <PlayButton {...restProps}>{children}</PlayButton>
-}
-
 Header.Profile = function HeaderProfile({ children, ...restProps }) {
     return <Profile {...restProps}>{children}</Profile>
 }
