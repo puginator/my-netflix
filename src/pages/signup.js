@@ -33,7 +33,9 @@ export default function Signup() {
                 .then(() => {
                     history.push(ROUTES.BROWSE)
                 })
-            ).catch((error) => {
+            )
+            .catch((error) => {
+                setFirstname('');
                 setEmailAddress('');
                 setPassword('');
                 setError(error.message); 
