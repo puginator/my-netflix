@@ -12,9 +12,8 @@ export const Title = styled.p`
 export const Container = styled.div`
     display: flex;
     flex-direction: column;
-    margin-bottom: 50px;
+    margin: 0 auto 50px;
     box-sizing: border-box;
-    
     > ${Title} {
         @media (max-width: 1000px) {
             margin-left: 30px;
