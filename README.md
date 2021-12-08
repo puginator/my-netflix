@@ -1,4 +1,4 @@
-#This project was part of the Scrimba Front-end Developer path
+# This project was part of the Scrimba Front-end Developer path
 This was an amazing experience building the largest app in my journey so far. The course was hosted by @karlhadwen. 
 
 Some things that we covered with this clone
